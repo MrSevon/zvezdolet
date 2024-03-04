@@ -1,0 +1,85 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Hotline';
+    src: url('../fonts/discoduckgradital.ttf') format('truetype');
+}
+
+h2 {
+    font-family: 'Hotline', sans-serif;
+    font-size: 40px;
+    color: #bf00e9;
+    font-weight: 100;
+}
+
+body {
+    background-color: #1d242f;
+
+}
+.main {
+    margin: 0 auto;
+}
+
+.score_text {
+    margin-right: 20px;
+}
+
+.digits {
+    display: flex;
+}
+.menu {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    left: 1vw;
+    top: 15vh;
+}
+.btn {
+
+    
+    padding: 0 10px 50px;
+    border: 2px solid #bf00e9;
+    background: transparent;
+    cursor: pointer;
+    height: 40px;
+
+    font-family: 'Hotline', sans-serif;
+    font-size: 40px;
+    color: #bf00e9;
+    font-weight: 100;
+
+    transition: transform .2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.game_border {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+    height: 700px;
+    left: calc(50vw - 200px);
+    top: 20vh;
+    border: lime 2px solid;
+}
+
+.zvezdolet {
+    position: absolute;
+    transform: translateY(600px);
+
+}
+
+.meteorite {
+    position: absolute;
+    top: 10px;
+    transform: translateX(0px);
+}
+
+.game-over {
+    position: absolute;
+    top: -100px;
+    display: none;
+}
